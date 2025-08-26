@@ -43,6 +43,7 @@ class DataIngestion:
             feature_store_file_path=self.data_ingestion_config.feature_store_file_path 
             dir_path=os.path.dirname(feature_store_file_path)
             os.makedirs(dir_path,exist_ok=True) 
+            print("dataframe")
             dataframe.to_csv(feature_store_file_path,index=False,header=True)
             return dataframe
         except Exception as e:
@@ -50,6 +51,7 @@ class DataIngestion:
     
     def split_data_as_train_test(self,dataframe: pd.DataFrame):
         try:
+            print("dataframe")
             train_set, test_set = train_test_split(
                 dataframe, test_size=self.data_ingestion_config.train_test_split_ratio
             )
