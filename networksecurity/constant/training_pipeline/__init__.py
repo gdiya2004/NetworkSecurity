@@ -7,6 +7,9 @@ TARGET_COLUMN="Result"
 PIPELINE_NAME:str="NetworkSecurity" 
 ARTIFACT_DIR:str="Artifacts"
 
+SAVED_MODEL_DIR=os.path.join("data_schema","schema,yaml")
+MODEL_FILE_NAME="model.pkl"
+
 FILE_NAME:str="phisingData.csv"
 TRAIN_FILE_NAME:str="train.csv"
 TEST_FILE_NAME:str="test.csv"
