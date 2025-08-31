@@ -1,0 +1,24 @@
+[2025-08-31 10:59:36,344] 148 numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2025-08-31 10:59:36,344] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2025-08-31 10:59:57,482] 42 root - INFO - Start data Ingestion
+[2025-08-31 11:00:35,011] 58 root - INFO - Performed train test split on the dataframe
+[2025-08-31 11:00:35,012] 60 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-08-31 11:00:35,015] 67 root - INFO - Exporting train and test file path.
+[2025-08-31 11:00:35,549] 76 root - INFO - Exported train and test file path.
+[2025-08-31 11:00:35,553] 45 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\08_31_2025_10_59_37\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\08_31_2025_10_59_37\\data_ingestion\\ingested\\test.csv')
+[2025-08-31 11:00:35,577] 55 root - INFO - Initiate the data Validation
+[2025-08-31 11:00:35,768] 31 root - INFO - Required no . of columns:2
+[2025-08-31 11:00:35,768] 31 root - INFO - Required no . of columns:2
+[2025-08-31 11:00:37,346] 46 root - INFO - Entered initiate_data_tranformation
+[2025-08-31 11:00:37,347] 48 root - INFO - Starting data transformation
+[2025-08-31 11:00:37,543] 34 root - INFO - Entered get_data_transformner_obj
+[2025-08-31 11:00:37,544] 37 root - INFO - Initialised knn imputer
+[2025-08-31 11:00:37,622] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-08-31 11:00:37,643] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-08-31 11:00:37,643] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-08-31 11:00:37,662] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-08-31 11:08:29,728] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-08-31 11:08:29,735] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-08-31 11:08:29,735] 46 root - INFO - Entered the save_object method of MainUtils class
+[2025-08-31 11:08:29,758] 50 root - INFO - Exited the save_object method of MainUtils class
+[2025-08-31 11:08:29,759] 156 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\08_31_2025_10_59_37\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9916704528244737, precision_score=0.9896221662468514, recall_score=0.9937272359368676), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9829463735360592, precision_score=0.9815346737792368, recall_score=0.9843621399176955))
